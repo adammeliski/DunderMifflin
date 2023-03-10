@@ -252,6 +252,7 @@ header{
 
     .bannerpic {
         position: static;
+        opacity: 1.0;
     }
 
     .bannercontent {
