@@ -72,42 +72,52 @@ header{
     width: 60%;
     margin-top: 25%;
     border-radius: 6px;
-    flex: 2 2 auto;
 }
 
-@media only screen and (min-width:426px) and (max-width: 768px) {
-    .navbar a {
-        width: 22%;
-        font-size: .75em;
-        flex: 2 2 10%;
-    }
-    
-    .bannerpic {
-        position: static;
-        height: auto;
-        width: 60%;
-        opacity: 1.0;
-        min-width: 300px;
+
+
+/* Product Section */
+
+.products {
+    display: flex;
+    justify-content: center;  
+    flex-direction: column;  
     }
 
-    .banner {
-        flex-direction: row-reverse;
-        align-items: center;
-        height: 200px;
-    }
+.producttitle {
+    width: 100%;
+    text-align: center;
+    background-color: grey;
+}
 
-    .bannercontent {
-        text-align: left;
-        width: 40%;
-        height: auto;
-        margin: 0;
-        font-size: 2.5em;
-        flex: 1 1 auto;
-    }
+.proddescription {
+    text-align: center;
+    font-size: 1em;
+}
 
-    .other {
-        display: flex;
-    }
+.cta {
+    display: flex;
+    justify-content: center;
+}
+
+.products a {
+    background-color:black;
+    border-radius: 6px;
+    color: white;
+    padding: 7px;
+    margin: 10px;
+    text-decoration: none;
+    height: auto;
+    text-align: center;
+    width: 20%;
+}
+
+.phoneorder {
+    font-size: 3em
+}
+
+.onlineorder {
+    font-size: 1em;
 }
 
 /* Staff Section */
@@ -165,7 +175,7 @@ header{
 .qacomplaint a {
     text-decoration: none;
     color: black;
-    width: 1000px;
+    width: 100%;
     text-align: right;
 }
 
@@ -173,6 +183,46 @@ header{
     visibility: hidden;
     color: white;
 }
+
+/* Tablet Display */
+
+@media only screen and (min-width:426px) and (max-width: 768px) {
+    .navbar a {
+        width: 22%;
+        font-size: .75em;
+        flex: 2 2 10%;
+    }
+    
+    .bannerpic {
+        position: static;
+        height: auto;
+        width: 60%;
+        opacity: 1.0;
+        min-width: 300px;
+    }
+
+    .banner {
+        flex-direction: row-reverse;
+        align-items: center;
+        height: 200px;
+        background-color: whitesmoke;
+    }
+
+    .bannercontent {
+        text-align: left;
+        width: 40%;
+        height: auto;
+        margin: 0;
+        font-size: 2.5em;
+        flex: 1 1 auto;
+    }
+
+    .other {
+        display: flex;
+    }
+}
+
+/* Mobile Display */
 
 @media only screen and (max-width:425px) {
     header {
