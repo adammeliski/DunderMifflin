@@ -123,13 +123,6 @@ header{
 
 /* Staff Section */
 
-.other {
-    display: flex;
-    justify-content: space-around;
-    overflow: hidden;
-    height: 100px;
-}
-
 .meet {
     width: 100%;
     display: flex;
@@ -137,8 +130,17 @@ header{
 }
 
 .meet h2 {
-    width: 100%;
     text-align: center;
+}
+
+.other {
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    height: auto;
+    width: 80%;
+    flex-wrap: wrap;
+    margin: auto;
 }
 
 .button {
@@ -148,6 +150,8 @@ header{
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    width: 30%;
+    height: auto;
 }
 
 .buttonpic {
@@ -217,10 +221,6 @@ header{
         font-size: 2.5em;
         flex: 1 1 auto;
     }
-
-    .other {
-        display: flex;
-    }
 }
 
 /* Mobile Display */
@@ -273,5 +273,6 @@ header{
     .button {
         height: 6rem;
         margin: 2px 0px;
+        width: 100%;
     }
 }
